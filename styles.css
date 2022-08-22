@@ -22,6 +22,7 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  background: #F9F2ED;
 }
 
 .scorecard {
