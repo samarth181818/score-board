@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Score Board</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="http://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+</head>
+
+<body>
+  <div class="board">
+    <div class="scorecard home">
+      <p class="title">Home</p>
+      <div class="score-bg">
+        <p class="score" id="score-home"></p>
+      </div>
+      <div class="btn-container">
+        <button onclick="home(1)">+1</button>
+        <button onclick="home(2)">+2</button>
+        <button onclick="home(3)">+3</button>
+      </div>
+    </div>
+    <div class="scorecard guest">
+      <p class="title">Guest</p>
+      <div class="score-bg">
+        <p class="score" id="score-guest"></p>
+      </div>
+      <div class="btn-container">
+        <button onclick="guest(1)">+1</button>
+        <button onclick="guest(2)">+2</button>
+        <button onclick="guest(3)">+3</button>
+      </div>
+    </div>
+    <button class="new-game" onclick="newGame()">New Game</button>
+    <div class="time-div">
+      <p>Time: </p>
+      <div class="min-div">
+        <p>MIN</p>
+        <p id="minutes">2</p>
+      </div>
+      <div class="sec-div">
+        <p>SEC</p>
+        <p id="seconds">2</p>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+</html>
